@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/index.js"></script>
+    <script src="../CSS/common.css"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #wrapper {
+            margin: 0 auto;
+            max-width: 1170px;
+        }
+        body {
+            font-size: 19px;
+            line-height: 1.15;
+            color: rgb(120, 119, 119);
+            background-image: url(..//IMG/anhnentreem.jpg);
+            width: 100%;
+            background-size: cover;
+        }
+        .container {
+            width: 1280px;
+            height: 40px;
+            background: rgb(228, 146, 160);
+            margin: 0px auto;
+        }
+        ul.root > li {
+            list-style: none;
+            float: left;
+            position: relative;
+            padding-left: 5px;
+        }
+        ul.root > li > a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0px 12px 0px 12px;
+            line-height: 40px;
+            display: block;
+            font-weight: bold;
+        }
+        ul.root > li > a:hover {
+            background-color: pink;
+            color: palevioletred;
+            transform: ease-in 0.35s;
+        }
+        ul.submenu {
+            width: 250px;
+            background: rgb(228, 146, 160);
+            min-height: 80px;
+            display: none;
+            position: absolute;
+        }
+        ul.submenu li {
+            list-style: none;
+        }
+        ul.submenu li a {
+            text-transform: none;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            border: 1px solid #ccc;
+            line-height: 40px;
+            text-indent: 10px;
+        }
+        ul.root > li:hover ul.submenu {
+            display: block;
+            background-color: rgb(228, 146, 160);
+            color: red;
+            transform: ease-in 0.35s;
+        }
+        ul.submenu li a:hover {
+            background-color: yellow;
+            color: red;
+            transform: ease-in 0.35s;
+        }
+        .headline {
+            text-align: center;
+            margin: 60px 0px;
+        }
+        h1 {
+            font-size: 18px;
+            color: #bebebe;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border: 2px solid gray;
+            display: inline-block;
+            color: gray;
+        }
+        ul.product {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        ul.product li {
+            flex-basis: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        ul.product li img {
+            max-width: 100%;
+            height: auto;
+        }
+        ul.product li .product-info a {
+            display: block;
+            text-decoration: none;
+        }
+        ul.product li .product-top {
+            position: relative;
+            overflow: hidden;
+        }
+        ul.product li .product-top a.buy {
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color: rgb(0, 42, 78);
+            color: orangered;
+            padding: 10px 0px;
+            position: absolute;
+            bottom: -50px;
+            width: 91.5%;
+            transition: 0.25s;
+        }
+        ul.products li .product-info {
+            padding: 20px 0px;
+        }
+        ul.product li .product-info {
+            display: block;
+            text-decoration: none;
+        }
+        ul.product li .product-info a.product-cat {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: rgb(0, 0, 0);
+            padding: 3px 0px;
+        }
+        ul.product li .product-info a.product-name {
+            color: black;
+            padding: 3px 0px;
+        }
+        ul.product li .product-info .product-price {
+            color: red;
+            font-weight: 600;
+        }
+        ul.product li .product-top .product-thumb img {
+            display: block;
+        }
+        ul.product li .product-top .product-thumb {
+            display: block;
+        }
+        ul.product li:hover a.buy {
+            bottom: 0px;
+        }
+        ul.product li:hover .product-top .product-thumb img {
+            filter: opacity(80%);
+        }
+        a {
+            color: black;
+        }
+        #footer {
+            height: 220px;
+            color: rgb(0, 0, 0);
+            float: left;
+            margin-left: 13%;
+        }
+        .footer-linklists {
+            height: 220px;
+            color: black;
+            float: left;
+            margin-left: 13%;
+        }
+        .footer-lms {
+            height: 220px;
+            color: black;
+            float: left;
+            margin-left: 13%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <img src="../IMG/banner.jpg" style="margin-left: 190px;" height="200" width="1140" alt="">
+        </header>
+    </div>
+    <div class="container">
+       <nav>
+        <div class="menu">
+            <ul class="root">
+                <li><a href="#">Trang chủ</a>
+                </li>
+                <li><a href="#">Quần áo bé trai</a>
+                    <ul class="submenu">
+                        <li><a href="#">Áo thun bé trai</a>
+                        </li>
+                        <li><a href="aosominam.html">Áo sơ mi bé trai</a>
+                        </li>
+                        <li><a href="#">Quần tây bé trai</a>
+                        </li>
+                        <li><a href="#">Quần ngắn bé trai</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Quần áo bé gái</a>
+                    <ul class="submenu">
+                        <li><a href="#">Áo thun bé gái</a>
+                        </li>
+                        <li><a href="aosominu.html">Áo sơ mi bé gái</a>
+                        </li>
+                        <li><a href="#">Quần dài bé gái</a>
+                        </li>
+                        <li><a href="#">Quần jean dài/ngắn bé gái</a>
+                        </li>
+                        <li><a href="#">váy đầm bé gái</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Bảng size</a>
+                </li>
+                <li><a href="banchay.html">Sản Phẩm hot</a>
+                </li>
+                <li><a href="#">Thanh toán</a>
+                </li>
+                <li>
+                    <a href=""></a>
+                </li>
+                    <li class="navbar-item"><a href="dangnhap.html" class="navbar-link" id="btn1">Đăng Nhập</a></li>
+                    <li class="navbar-item"><a href="#" class="navbar-link" id="btn2">Đăng Ký</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+    <div id="wrapper">
+        <div class="headline">
+            <h1>Các sản Phẩm</h1>
+        </div>
+        <ul class="product">
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro1.jpg" alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Quần Jean</a>
+                            <a href="" class="product-name">Quần jean bé gái ống rộng chữ 3 nút</a>
+                            <div class="product-price">175.000 VND</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro2.jpg" alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Quần Jean</a>
+                            <a href="" class="product-name">Quần jean bé gái ống rộng 2 khóa</a>
+                            <div class="product-price">200.000 VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro3.jpg" alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Quần KaKi</a>
+                            <a href="" class="product-name">Quần kaki túi hộp bé trai</a>
+                            <div class="product-price">300.000 VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro4.jpg" alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Quần Jean</a>
+                            <a href="" class="product-name">Quần jean bé trai in chữ</a>
+                            <div class="product-price">185.000 VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro5.jpg" alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Áo</a>
+                            <a href="" class="product-name">ÁO MICKEY</a>
+                            <div class="product-price">70.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro6.jpg" alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Áo</a>
+                            <a href="" class="product-name">ÁO TRỄ VAI HÌNH GẤU</a>
+                            <div class="product-price">55.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro7.jpg" alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Áo</a>
+                            <a href="" class="product-name">Áo hình gấu túi đeo</a>
+                            <div class="product-price">100.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro8.jpg" alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Áo</a>
+                            <a href="" class="product-name">Áo dài tay bé trai chữ B (NY)</a>
+                            <div class="product-price">50.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro9.jpg" alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Đầm</a>
+                            <a href="" class="product-name">Đầm bé gái Acne Studios</a>
+                            <div class="product-price">150.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro10.jpg" alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Đầm</a>
+                            <a href="" class="product-name">Đầm tùng fen.di</a>
+                            <div class="product-price">155.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro11.jpg" alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Đồ Bộ</a>
+                            <a href="" class="product-name">Bộ thun bé trai chữ Shark</a>
+                            <div class="product-price">200.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro12.jpg" alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Đồ BỘ</a>
+                            <a href="" class="product-name">Bộ thun bé trai chữ do it yourself</a>
+                            <div class="product-price">140.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro13.jpg" width="240" height="240"alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Áo</a>
+                            <a href="" class="product-name">Áo Sơ Mi Tay Ngắn Cho Bé Trai Nhiều Họa Tiết</a>
+                            <div class="product-price">139.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro14.jpg" width="240" height="240"alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Áo</a>
+                            <a href="" class="product-name">Áo Sơ Mi Tay Ngắn Cho Bé Trai Nhiều Họa Tiết</a>
+                            <div class="product-price">109.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro15.jpg" width="240" height="240"alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Áo</a>
+                            <a href="" class="product-name">Áo sơ mi thêu chùm sao bé gái 3-12 tuổi</a>
+                            <div class="product-price">119.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro16.jpg" width="240" height="240" alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Áo</a>
+                            <a href="" class="product-name">Áo sơ mi trắng dài tay rộng cổ thêu hoa cho bé gái </a>
+                            <div class="product-price">189.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="footer">
+        <h1>Hướng dẫn</h1>
+        <li><a href="/huong-dan-chon-size-quan-ao-cho-be">Hướng dẫn chọn size</a>
+        </li>
+        <br>
+        <li><a href="/thanh-toan">Hướng dẫn thanh toán</a>
+        </li>
+        <br>
+        <li><a href="/chinh-sach-doi-tra-hang">Chính sách đổi trả hàng</a>
+        </li>
+        <br>
+    </div>
+    <div class="footer-linklists">
+        <h1> Phụ kiện</h1>
+        <li><a href="/bang-do-cai-toc">Băng Đô - Cài Tóc</a>
+        </li>
+        <br>
+        <li><a href="/chan-mem">Chăn Mềm</a>
+        </li>
+        <br>
+        <li><a href="/mat-kinh">Mắt Kính</a>
+        </li>
+        <br>
+        <li><a href="/tui-xach-ba-lo">Túi Xách - Ba Lô</a>
+        </li>
+        <br>
+        <li><a href="/du-ao-mua">Dù - Áo Mưa</a>
+        </li>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="footer-lms">
+        <h1> Liên hệ</h1>
+        <li><a href="#">Số điện thoại : 0999345678</a>
+        </li>
+        <br>
+        <li><a href="#">Địa chỉ:12 Nguyễn Văn Bảo,phường 5,Gò Vấp,TP HCM</a>
+        </li>
+        <br>
+        <li><a href="#">Nguyễn Hà Duy Đông</a>
+        </li>
+        <br>
+        <li><a href="#">Nguyễn Hoàng Thịnh</a>
+        </li>
+        <br>
+    </div>
+    <div class="modal fade" role="dialog" id="myModal">
+        <div class="modal-dialog" style="margin-top: 10px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-left">THÔNG TIN CÁ NHÂN</h2>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="form-horizontal" style="margin-top: 10px;">
+                        <label for="Name" class="control-label col-xs-3">Tài Khoản</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="Name" class="form-control">
+                            <span class="text-danger" id="tbName">*</span>
+                        </div>
+                        <label for="Ao" class="control-label col-xs-3">Mật Khẩu</label>
+                        <div class="col-xs-9" style="margin-bottom: 10px;">
+                            <input type="text" id="mk" class="form-control">
+                            <span class="text-danger" id="tbmk" style="color: red;">*</span>
+                        </div>
+                        <label for="diachi" class="control-label col-xs-3">Địa Chỉ:</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="diachi" class="form-control">
+                            <span class="text-danger" id="tbdiachi">*</span>
+                        </div>
+                        <label for="Name" class="control-label col-xs-3">Ngày Sinh</label>
+                        <div class="col-xs-9">
+                            <input type="date" id="ngaytaptrung" class="form-control">
+                            <span class="text-danger" id="tbngaytaptrung">*</span>
+                        </div>
+                        <label for="Name" class="control-label col-xs-3">Số Điện Thoại</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="sdt" class="form-control">
+                            <span class="text-danger" id="tbsdt">*</span>
+                        </div>
+                        <label for="Name" class="control-label col-xs-3">Ảnh Đại Diện</label>
+                        <div class="col-xs-9">
+                            <input type="file" id="anhdaidien" class="form-control">
+                            <span class="text-danger" id="tbanhdaidien">*</span>
+                        </div>
+                        <button class="btn btn-sucess btn-group-justified" id="save" type="putton" style="color: white; background-color: green; width: 100%;">
+                            Lưu
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/index.js"></script>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      #wrapper{
+        margin:0 auto;
+        max-width: 1170px;
+      }
+      body{
+        font-size: 15px;
+        line-height: 1.15;
+        color: rgb(120, 119, 119);
+      }
+      .headline{
+        text-align: center;
+        margin: 40px 0px;
+      }
+      h1{
+        font-size: 18px;
+        color: #bebebe;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        border: 2px solid gray;
+        display: inline-block;
+        color: gray;
+      }
+      ul.product{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+      }
+      ul.product li{
+        flex-basis: 25%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+      }
+      ul.product li img{
+        max-width: 100%;
+        height: auto;
+      }
+      ul.product li .product-top a.buy{
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        background-color: rgb(0, 42, 78);
+        color: orangered;
+        padding: 10px 0px;
+        position: absolute;
+        bottom: -37px;
+        width: 91.5%;
+        transition: 0.25s;
+      }
+      ul.product li .product-info a{
+        display: block;
+        text-decoration: none;
+      }
+      ul.product li .product-top{
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 10px;
+      }
+      ul.products li .product-info{
+        padding: 10px 0px;
+      }
+      ul.product li .product-info{
+        display: block;
+        text-decoration: none;
+      }
+      ul.product li .product-info a.product-cat{
+        font-size: 11px;
+        text-transform: uppercase;
+        color: rgb(181, 175, 175);
+        padding: 3px 0px;
+      }
+      ul.product li .product-info a.product-name{
+        color: black;
+        padding: 2px 0px;
+        padding: 3px 0px;
+      }
+      ul.product li .product-info .product-price{
+        color: red;
+        font-weight: 600;
+      }
+      ul.product li .product-top a.product-thumb img{
+        display: block;
+      }
+      ul.product li .product-top a.product-thumb{
+        display: block;
+      }
+      ul.product li:hover a.buy{
+        bottom: 0px;
+      }
+      ul.product li:hover .product-top .product-thumb img{
+        filter: opacity(80%);
+      }x  
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="headline">
+        <h1>Áo Sơ Mi Nữ</h1>
+      </div>
+      <ul class="product">
+        <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro15.jpg" width="240" height="240"alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Áo</a>
+                            <a href="" class="product-name">Áo sơ mi thêu chùm sao bé gái 3-12 tuổi</a>
+                            <div class="product-price">119.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro16.jpg" width="240" height="240" alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Áo</a>
+                            <a href="" class="product-name">Áo sơ mi trắng dài tay rộng cổ thêu hoa cho bé gái </a>
+                            <div class="product-price">189.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro15.jpg" width="240" height="240"alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Áo</a>
+                            <a href="" class="product-name">Áo sơ mi thêu chùm sao bé gái 3-12 tuổi</a>
+                            <div class="product-price">119.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../IMG/pro16.jpg" width="240" height="240" alt="" />
+                        </a>
+                        <a href="" class="buy">Mua</a>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Áo</a>
+                            <a href="" class="product-name">Áo sơ mi trắng dài tay rộng cổ thêu hoa cho bé gái </a>
+                            <div class="product-price">189.000VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+      </ul>
+    </div>
+  </body>
+</html>
